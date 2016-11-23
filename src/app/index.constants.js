@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('pandiyanMe')
+    .module('pandiyan.me')
     .constant('malarkey', malarkey)
     .constant('moment', moment);
 

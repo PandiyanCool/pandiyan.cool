@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-      .module('pandiyanMe')
+      .module('pandiyan.me')
       .service('webDevTec', webDevTec);
 
   /** @ngInject */
