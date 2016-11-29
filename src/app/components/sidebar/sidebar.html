@@ -1,8 +1,16 @@
-<md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="3">
     <md-toolbar class="md-theme-light">
-        Side Nav
+        <h1 class="md-toolbar-tools">Pandiyan Murugan</h1>
     </md-toolbar>
-    <md-content layout-padding>
-        Close side nav
-    </md-content>
+    <div layout-align="center center">
+        <div><img src="assets/images/pandiyan.jpg" alt="profile" class="img-circle"></div>
+    </div>
+
+    <md-list>
+        <md-divider></md-divider>
+        <md-list-item ng-click="navigateTo(menu.value, $event)" ng-repeat="menu in vm.sidebarMenu">
+            {{menu.name}}
+        </md-list-item>
+        <md-divider></md-divider>
+    </md-list>
 </md-sidenav>
