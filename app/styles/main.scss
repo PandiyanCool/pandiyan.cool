@@ -53,6 +53,11 @@ body {
   margin: 2rem 0;
 }
 
+@font-face {
+    font-family: Bebas;
+    src: url("../fonts/BebasKai-Regular.otf") format("opentype");
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -66,8 +71,17 @@ body {
   font-size: 1.5rem;
 }
 
+#site-title{
+  font-family: "Bebas" !important;
+  font-size: 58px !important;
+  color: #ffd800 !important;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 100px
+}
+
 .jumbotron {
-    background-image: url("https://instagram.fmaa2-1.fna.fbcdn.net/t51.2885-15/e35/16585336_361123747620403_5337389106081038336_n.jpg");
+    background-image: url("https://instagram.fcok1-1.fna.fbcdn.net/t51.2885-15/e35/17662460_1085954178214743_155359270722863104_n.jpg");
     background-color: #17234E;
     min-height: 50%;
     background-repeat: no-repeat;
@@ -103,3 +117,4 @@ body {
     border-bottom: 0;
   }
 }
+

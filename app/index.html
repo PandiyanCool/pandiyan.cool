@@ -12,6 +12,7 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -31,27 +32,32 @@
 
   <div class="header-container">
     <div class="jumbotron">
-      <h1 class="display-3" style="margin-top:100px; color:#ffd800">PANDIYAN MURUGAN</h1>
-      <p class="lead" style="color:#ffd800">What I know?</p>
+      <div id="site-title">PANDIYAN MURUGAN</div>
+      <!--<div id="site-menu" class="nav nav-pills float-left">
+        <div>About</div>
+        <div>Blog</div>
+        <div>Contact</div>
+      </div>-->
+      <!--<p class="lead" style="color:#ffd800">What I know?</p>-->
 
     </div>
   </div>
 
   <div class="container">
-    <!--<div class="header">
-      <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      <h3 class="text-muted">Pandiyan Murugan</h3>
-    </div>-->
+    <div class="header">
+      <!--<ul class="nav nav-pills float-right">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>-->
+      <h3 class="text-muted">Hi <br>I'm Pandiyan</h3>
+    </div>
 
     <div class="row marketing">
       <dv class="col-md-5">
@@ -62,6 +68,10 @@
         <p>I’m a full stack developer, and interested in playing with Elasticsearch, Kibana.</p>
         <p>I’ve been coding past few years.</p>
         <p>Sometimes will contribute to the programmers community via stackoverflow.com</p>
+
+        <div class="alert alert-info">
+          <strong>Info!</strong> This site is under development. Thanks for visiting. :)
+        </div>
       </div>
     </div>
 
@@ -71,20 +81,24 @@
   </div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <!--<script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-99823588-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/tether/dist/js/tether.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/materialize/bin/materialize.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
